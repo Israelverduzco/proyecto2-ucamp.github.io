@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Farmacia</title>
+    
+    <link type="text/css"rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Navegación-->
+    <nav class="navbar navbar-light bg-light">
+          <span class="navbar-brand mb-0 h1">Catalogo de Productos Farmacia Pharma Centro</span>
+    </nav>
+<h2>Agregar a inventario</h2>
+    <div class="container mt-4" id="body">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header">
+                        
+                    </div>
+                    <div class="card-body">
+                        <form id="inventario">
+                            <div class="form-group">
+                                <input type="text" id="proveedor" class="form-control my-3" placeholder="Ingresar Proveedor">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="productCode" class="form-control my-3" placeholder="Ingresar Codigo de barras">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="descripcion" class="form-control my-3" placeholder="Ingresar descripción del producto">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="precio" class="form-control my-3" placeholder="Ingresar precio">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Agregar</button>
+                            
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6">
+                <table class="table caption-top bg-light">
+                    <thead>
+                      <tr>
+                        <th scope="col">Proveedor</th>
+                        <th scope="col">Codigo de barras</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Precio</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+                      <tr>
+                        <td>Nadro</td>
+                        <td>750134567812</td>
+                        <td>Redoxon Infantil 10 Tab</td>
+                        <td>102.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+    </--Script de js-->
+    <script src="./index.js"></script>
+
+    
+</body>
+</html>
